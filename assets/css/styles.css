@@ -10,6 +10,7 @@
   --container-color: hsl(355, 20%, 16%);
   --title-color: hsl(355, 0%, 95%);
   --text-color: hsl(355, 0%, 75%);
+  --accent-color: hsl(200, 100%, 50%); /* New accent color for highlights */
 
   --body-font: 'Rubik', sans-serif;
   --h1-font-size: 2.4rem;
@@ -59,6 +60,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  line-height: 1.6; /* Improved readability */
 }
 
 main {
@@ -71,11 +73,13 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for depth */
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 0.5rem; /* Rounded corners for images */
 }
 
 input,
@@ -84,6 +88,7 @@ button {
   font-size: var(--normal-font-size);
   border: none;
   outline: none;
+  border-radius: 0.5rem; /* Rounded corners for inputs and buttons */
 }
 
 button {
@@ -100,6 +105,9 @@ button {
 
 .section {
   padding: 5rem 0 2rem;
+  background-color: var(--container-color); /* Added background color for sections */
+  border-radius: 1rem; /* Rounded corners for sections */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .section-title {
@@ -107,6 +115,17 @@ button {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
+  position: relative; /* For underline effect */
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--first-color);
+  margin: 0.5rem auto; /* Centered underline */
+  border-radius: 2px; /* Rounded underline */
 }
 
 .btn {
