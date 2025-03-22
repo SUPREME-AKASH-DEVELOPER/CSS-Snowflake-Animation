@@ -29,7 +29,7 @@ Alternatively, here is a screenshot of the final result:
 ![image](https://github.com/user-attachments/assets/2b6be8ca-335c-4c5c-9c55-59875cedfea3)
 
 
-![Snowflake Animation](#)
+![Snowflake Animation](https://supreme-akash-developer.github.io/CSS-Snowflake-Animation/)
 
 You can find the full code on my GitHub repository:  
 [GitHub - CSS Snowflake Animation](https://github.com/SUPREME-AKASH-DEVELOPER/CSS-Snowflake-Animation)
